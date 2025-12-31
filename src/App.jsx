@@ -1,18 +1,20 @@
-import Navbar from "./Navbar";
-import Footer, { F } from "./Footer";
-import logo from "./assets/react.svg"
+import Navbar from "./Navbar"
+import { Footer1,Footer2 } from "./Footer"
+import logo from './assets/captain.jpg'
+let App=()=>{
 
-const App = () => {
-  return (
+  return(
+
     <div>
-      <Navbar /><br /><br />
-      <img src={logo} alt="logo" />
-      <h1>Hello World</h1>
-      <Footer />
-      <br />
-      <F />
+      <Navbar/> <br/>
+    <h1 style={{color:"royalblue",background:"black"}}>Hello World</h1>
+     
+     <img src={logo} alt="" />
+     <Footer1/>
+     <Footer2/>
     </div>
-  );
-};
+  )
 
-export default App;
+}
+
+export default App

@@ -1,13 +1,19 @@
-import ChildProps from "./childprops"
+import React from 'react'
+import PropsChild from './childprops'
 
 const Props = () => {
   return (
-    <div>
-        <h1>This is parent Props
-            <ChildProps name="Deepak"age="23" />
-        </h1>
-        <h2></h2>
-        </div>
+    <div>                  
+      {/* Props */}
+
+        {/* <PropsChild myname="Deepak" myage="23"/> */}
+
+<div style={{display:'flex'}}>
+        <PropsChild img="/vite.svg" price="999" dis="T-shirt" />
+        <PropsChild img="/vite.svg" price="699" dis="shirt" />
+</div>
+      
+    </div>
   )
 }
 

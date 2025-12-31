@@ -1,7 +1,24 @@
-function Navbar(){
+import logo from "./assets/captain.jpg";
+import "./index.css";
 
-    return (
-        "this is Navbar")
+const Navbar = () => {
+  return (
 
-}
-export default Navbar
+
+ <nav className="navbar">
+  <img src={logo} alt="logo" className="logo" />
+
+  <div className="nav-center">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <a href="#" className="register-btn">Registration</a>
+</nav>
+
+  );
+};
+
+export default Navbar;
